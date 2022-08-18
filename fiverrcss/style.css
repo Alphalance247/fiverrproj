@@ -1,7 +1,10 @@
 /* section{
     position: absolute;
   } */
-      body{
+  
+
+
+  body{
         font-weight: bold;
         font-family:Arial, Helvetica, sans-serif;
         padding: 0;
@@ -164,25 +167,29 @@
         /* section 3 */
          section .section3{
           background: white;
-          padding:1.5em  0;
+          padding:3em 2em;
+
          }
         .cell{
-          width: 95%;
-          margin: auto;
+          /* width: 100%; */
+          /* margin: auto; */
           background: white;
           /* padding: 1em; */
         }
         .carousel{
-          width: 400px;
+          width: 450px;
           height: 300px;
           background: white;
           padding: 0 1em;
           margin: 1em 1em;
           border-radius: .7em;
         }
+        .carousel img{
+          width: 100%;
+        }
         .services{
-          margin-left: 1.5em;
-          margin-bottom: .7em;
+          /* margin-left: 1.5em;
+          margin-bottom: .7em; */
           font-size: 1.8em;
         }
        .para{
@@ -312,42 +319,31 @@
         }
         /* section 7 */
       .section7{
-        width:90%;
-        margin: auto;
-        padding: 4em 0;
+        padding: 4em 2em;
       }
-      .carousel2 .naadam{
-        overflow: hidden;
+      .carousel2{
+        width: 100%;
+        height: 100%;
       }
-      .section7 .naadam-pro{
-        padding:0 2.2em;
-        align-items: center;
+      .naadam{
+        width:500px;
+        height: 500px;
+        gap: 3em;
       }
-
-        /* .section7 {
-          width: 100%;
-        }
-
-        .carousel2 {
-          margin: 0 auto;
-          padding: 4rem 7rem;
-        }
-        .naadam {
-          display: flex;
-          gap: 2rem;
-        }
-        .naadam__img > img {
-          width: 100%;
-        } */
-
+      .naadam__img > img{
+        width: 100%;
+        padding:0 1em;
+      }
+      .naadam-pro{
+        width: 100%;
+        padding:0 1em;
+      }
 
         /* Section 8 */
          .section8{
           background:#446EE7;
           color: white;
           padding:1.5em 2em;
-          /* width: 80%; */
-          /* margin:0 7em; */
          }
          .section8 img{
           width: 100%;
@@ -385,15 +381,14 @@
          /* .section10 */
          .section10{
           background: #63646a;
-          width: 100%;
-          margin: 1em 0;
           padding: 3em 1em;
          }
+         .caro .img__caro{
+          width: 600px;
+          padding: 0 2em;
+         }
          .caro{
-          width:500px;
-          height: 300px;
-          margin: 0 .8em;
-          background: white;
+          /* background: white; */
           border-radius: .5em;
           overflow: none;
         }
@@ -404,15 +399,15 @@
           object-position: center;
           border-radius: .5em;
          }
-         
-         .all{
-          padding: 1em;
-         }
          .cell3{
-          /* padding:1em 2em; */
           display: flex;
-          margin:2em;
-         }
+          width: 100%;
+          padding: .4em 3em;
+          }
+         /* .all{
+          padding: 1em;
+         } */
+         
          .cell3 img{
           border-radius: 50%;
          }
@@ -533,6 +528,115 @@
         .last-last a{
           margin: 0 .8em;
         }
+
+
+
+
+
+
+
+
+
+        /* new section */
+
+        @media(max-width:500px){
+          .mobile-app{
+            display: block;
+            padding-top:.8em ;
+            padding-bottom:.8em;
+            padding-right: 6.5em;
+            border: none;
+            border-radius: .3em;
+          }
+          .button{
+            background: lightgreen;
+            padding: .8em 8em;
+            border: none;
+            border-radius: .3em;
+            color: white;
+            text-transform: capitalize;
+          }
+          .section2{
+            background: white;
+            padding:0 2em;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+            grid-gap: 2em;
+            text-align: center;
+            align-items: center;
+        }
+        .section2 img{
+          width: 100%;
+      }
+      
+      /* sectionb33 */
+      .carousel{
+        width: 300px;
+        height: 300px;
+        background: white;
+        padding: 0 1em;
+        margin: 1em 1em;
+        border-radius: .7em;
+        overflow: hidden;
+      }
+      .carousel img{
+        width: 100%;
+      }
+      
+      
+      
+      
+      
+      .section7{
+        padding: 3em 0;
+      }
+      .carousel2{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .naadam{
+        width:390px;
+        height: 500px;
+        
+      }
+      .naadam__img > img{
+        width: 100%;
+        padding:0 1em;
+      }
+      .naadam-pro{
+        width: 100%;
+        padding:0 1em;
+      }
+      
+      
+      
+      
+      .caro .img__caro{
+        width: 430px;
+        
+       }
+       .caro{
+        background: white;
+        border-radius: .5em;
+        overflow: none;
+      }
+       .caro .img__caro > img {
+        width: 100%;
+        height:200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: .5em;
+       }
+       .cell3{
+        display: flex;
+        width: 100%;
+        padding: .4em 3em;
+        }
+      }
+
+       
+
       @media only screen and (min-width:603px){
       
         #check2{
@@ -671,6 +775,9 @@
           padding:1.2em 1.5em;
           /* width: 80%; */
           margin:0 1.5em;
+         }
+         .section11{
+          padding: 3em 2em;
          }
          .fiverr-guides{
           display: grid;
@@ -880,28 +987,14 @@
           width: 100%;
         }
        .section6{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-       } 
-       .carousel2{
-        width: 95%;
-        margin: auto;
-        background: white;
-        overflow: hidden;
-        
-      }
-       .naadam .testimony{
-        width:100%;
-       }
-       .section8{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
        }
        .naadam{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items:center;
+        width: 100%;
+        align-items: center;
        }
        .naadam-pro{
         font-size: 1em;
@@ -911,6 +1004,8 @@
         color: white;
         padding:2em 4em;
         margin:0 3em;
+        display: grid;
+       grid-template-columns: 1fr 1fr;
        }
        .main__sec a{
         display: block;
@@ -941,6 +1036,27 @@
         font-size: 1rem;
         line-height: 24px;
         font-weight:400;
+       }
+       .section10{
+        background: #63646a;
+        /* width: 100%; */
+        padding: 4em 3em;
+        margin: 4em 0;
+       }
+       
+        .caro .img__caro{
+          width: 400px;
+          height: 300px;
+        }
+      .caro .img__caro > img {
+        width: 100%;
+        height:300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: .5em;
+       }
+       .section11{
+        padding: 3em 3em;
        }
        .section12 {
         background: url('../fiverrimg/lastimg.png');
@@ -1077,17 +1193,18 @@
          }
          .section10{
           background: #63646a;
-          width: 100%;
+          /* width: 100%; */
+          padding: 4em 3em;
           margin: 4em 0;
          }
-         .caro{
-          width:260px;
-          height: 270px;
-          
-        }
+         
+          .caro .img__caro{
+            width: 400px;
+            height: 300px;
+          }
         .caro .img__caro > img {
           width: 100%;
-          height:200px;
+          height:300px;
           object-fit: cover;
           object-position: center;
           border-radius: .5em;
@@ -1096,15 +1213,16 @@
           width: 86%;
           margin: auto;
          } */
-         .all{
+         /* .all{
           width: 95%;
           margin: auto;
           padding: 3em;
-         }
+         } */
          .cell3{
-          background: white;
+          background: unset;
           width:90%;
          }
+
          .main__sec{
           display: grid;
           grid-template-columns:1fr auto;
